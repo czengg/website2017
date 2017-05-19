@@ -1,14 +1,28 @@
 //EVENT LISTENERS
+(function() {
+  var projectsData = {};
+  var projectsMenu = [];
 
-$(document).ready(function() {
-  updateHeaderHeight();
-});
+  //render the scene
+  var experienceTemplate = Handlebars.compile($('#experience').html());
 
-$(window).on('resize', function() {
-  updateHeaderHeight();
-});
+  //render
+  $('.experience-list').html(experienceTemplate(data.experience));
+
+  $(document).ready(function() {
+    updateHeaderHeight();
+
+    $('.experience').on('click', function(e) {
+      $(this).toggleClass('collapsed');
+    });
+  });
+
+  $(window).on('resize', function() {
+    updateHeaderHeight();
+  });
 
 
-function updateHeaderHeight() {
-  $('.header').height($(window).height());
-}
+  function updateHeaderHeight() {
+    $('.header').height($(window).height());
+  }
+})();

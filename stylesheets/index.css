@@ -3,6 +3,10 @@ html, body {
     height: 100%;
 }
 
+body {
+  font-size: 100%;
+}
+
 h3, h2, p {
   font-family: 'Roboto Light', sans-serif;
   font-weight: 300;
@@ -10,18 +14,35 @@ h3, h2, p {
 
 a {
   text-decoration: none;
-  cursor: pointer;
 }
 
 h1 {
   font-family: Playfair Display;
 }
 
+.action {
+  cursor: pointer;
+}
+
+/* HEADER */
+
 @keyframes down-arrow-jump {
-  0% {bottom: 20px;}
-  15% {bottom: 30px;}
-  36.51% {bottom: 20px;}
-  100% {bottom: 20px;}
+  0% {bottom: 0;}
+  15% {bottom: 10px;}
+  36.51% {bottom: 0;}
+  100% {bottom: 0;}
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(to top, rgba(255,255,255,.9), transparent);
 }
 
 .header {
@@ -29,22 +50,17 @@ h1 {
   background-position: center;
   background-size: cover;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  position: relative;
+  border-bottom: #E2E2E2 1px solid;
 }
 
-.header h1 {
+.header .main {
   font-size: 90px;
   margin: 10px 0;
   color: #000;
   font-weight: 600;
 }
 
-.header h2 {
+.header .desc {
   font-size: 30px;
   margin: 0 0 10px 0;
   padding: 0;
@@ -57,7 +73,7 @@ h1 {
   max-width: 850px;
 }
 
-.header h3:before, .header h3:after {
+.banner h3:before, .banner h3:after {
   border-top: 1px solid #7F7F7F;
   content: "";
   height: 1px;
@@ -66,27 +82,19 @@ h1 {
   width: 200px;
 }
 
-.header h3:before {
+.banner h3:before {
   left: 0;
 }
 
-.header h3:after {
+.banner h3:after {
   right: 0;
 }
 
-.header h3 {
+.banner h3 {
   font-size: 28px;
   margin: 0;
   padding: 0;
   color: #7F7F7F;
-}
-
-.more-indicator {
-  position: absolute;
-  bottom: 20px;
-  animation: down-arrow-jump 2s ease-in-out 3;
-  animation-delay: 1s;
-  cursor: pointer;
 }
 
 .btn {
@@ -106,3 +114,143 @@ h1 {
   color: #FFF;
 }
 
+.scroll {
+  position: absolute;
+  bottom: 30px;
+}
+
+.scroll p {
+  color: #4A4A4A;
+  margin-bottom: 25px;
+}
+
+.scroll .indicator {
+  position: relative;
+  bottom: 0;
+  animation: down-arrow-jump 2s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+/* LIST */
+ul.experience-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.experience {
+  padding: 40px 0 75px 0;
+  border-bottom: #E2E2E2 1px solid;
+  margin: 0;
+  text-align: center;
+  transition: background .5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.experience .time {
+  color: #B9B9B9;
+  margin: 0;
+}
+
+.experience .organization {
+  margin: 10px 0 6px 0;
+  color: #4A4A4A;
+  font-size: 54px;
+}
+
+.experience .key-skills {
+  margin: 6px 0 20px 0;
+  font-size: 24px;
+  color: #7F7F7F;
+}
+
+.experience .indicator {
+  bottom: 30px;
+  position: absolute;
+}
+
+.experience .expand-active, .experience .close {
+  display: none;
+}
+
+.experience .expand {
+  display: inline-block;
+}
+
+.experience .body {
+  text-align: left;
+  color: #E2E2E2;
+  width: 80%;
+  font-size: 23px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+}
+
+.experience.collapsed .body {
+  max-height: 1000px;
+}
+
+.experience .body strong {
+  color: #FFF;
+  font-weight: 600;
+}
+
+/* active state */
+
+.experience:hover .organization, .experience:hover .key-skills, .experience.collapsed .organization, .experience.collapsed .key-skills {
+  color: #FFF;
+}
+
+.experience:hover .time, .experience.collapsed .time {
+  color: #E2E2E2;
+}
+
+.experience:hover .indicator, .experience.collapsed .indicator {
+  fill: #FFF;
+}
+
+.experience:hover .expand-active, .experience.collapsed .close {
+  display: inline-block;
+}
+
+.experience:hover .expand, .experience.collapsed .expand, .experience.collapsed .expand-active {
+  display: none;
+}
+
+/* SPECIFIC TO ORG*/
+#flipagram:hover, #flipagram.collapsed {
+  background: rgba(234, 60, 60, .7);
+}
+
+#zazzle:hover, #zazzle.collapsed {
+  background: rgba(66, 135, 215, .8);
+}
+
+#roaringFork:hover, #roaringFork.collapsed {
+  background: rgba(50, 155, 148, .8);
+}
+
+#canvs:hover, #canvs.collapsed {
+  background: rgba(51, 185, 216, .9);
+}
+
+#drawbridge:hover, #drawbridge.collapsed {
+  background: rgba(152, 152, 152, .9);
+}
+
+#bnyMellon:hover, #bnyMellon.collapsed {
+  background: rgba(288, 106, 41, .75);
+}
+
+#pittsburghParks:hover, #pittsburghParks.collapsed {
+  background: rgba(55, 155, 50, .8);
+}
+
+#zeroWastePittsburgh:hover, #zeroWastePittsburgh.collapsed {
+  background: rgba(35, 168, 85, .8);
+}
