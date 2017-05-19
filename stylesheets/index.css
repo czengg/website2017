@@ -1,0 +1,91 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+h3, h2, p {
+  font-family: 'Roboto Light', sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: Playfair Display;
+}
+
+.header {
+  background-image: url('../images/background.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 90px;
+  margin: 10px 0;
+  color: #000;
+  font-weight: 600;
+}
+
+.header h2 {
+  font-size: 30px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  color: #7F7F7F;
+}
+
+.banner {
+  position: relative;
+  width: 80%;
+  max-width: 850px;
+}
+
+.header h3:before, .header h3:after {
+  border-top: 1px solid #7F7F7F;
+  content: "";
+  height: 1px;
+  position: absolute;
+  top: 16px;
+  width: 200px;
+}
+
+.header h3:before {
+  left: 0;
+}
+
+.header h3:after {
+  right: 0;
+}
+
+.header h3 {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  color: #7F7F7F;
+}
+
+.more-indicator {
+  position: absolute;
+  bottom: 20px;
+}
+
+.btn {
+  border: #4A4A4A 2px solid;
+  padding: 10px 16px;
+  color: #4A4A4A;
+  font-size: 20px;
+  font-family: 'Roboto Light', sans-serif;
+  font-weight: 300;
+  border-radius: 3px;
+  margin: 25px;
+}
+
