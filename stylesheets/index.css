@@ -10,10 +10,18 @@ h3, h2, p {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 h1 {
   font-family: Playfair Display;
+}
+
+@keyframes down-arrow-jump {
+  0% {bottom: 20px;}
+  15% {bottom: 30px;}
+  36.51% {bottom: 20px;}
+  100% {bottom: 20px;}
 }
 
 .header {
@@ -76,6 +84,9 @@ h1 {
 .more-indicator {
   position: absolute;
   bottom: 20px;
+  animation: down-arrow-jump 2s ease-in-out 3;
+  animation-delay: 1s;
+  cursor: pointer;
 }
 
 .btn {
@@ -87,5 +98,11 @@ h1 {
   font-weight: 300;
   border-radius: 3px;
   margin: 25px;
+  background: transparent;
+}
+
+.btn:hover {
+  background: #4A4A4A;
+  color: #FFF;
 }
 
