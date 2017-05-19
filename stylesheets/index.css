@@ -163,14 +163,17 @@ ul.experience-list {
 }
 
 .experience .key-skills {
-  margin: 6px 0 20px 0;
+  margin: 6px 0 0 0;
   font-size: 24px;
   color: #7F7F7F;
+  width: 50%;
+  transition: all .5s ease-in-out;
+  padding-bottom: 30px;
 }
 
 .experience .indicator {
-  bottom: 30px;
   position: absolute;
+  bottom: 30px;
 }
 
 .experience .expand-active, .experience .close {
@@ -189,10 +192,6 @@ ul.experience-list {
   max-height: 0;
   overflow: hidden;
   transition: all .5s ease-in-out;
-}
-
-.experience.collapsed .body {
-  max-height: 1000px;
 }
 
 .experience .body strong {
@@ -222,6 +221,14 @@ ul.experience-list {
   display: none;
 }
 
+.experience.collapsed .body {
+  max-height: 1000px;
+}
+
+.experience.collapsed .key-skills {
+  border-bottom: 3px solid #FFF;
+}
+
 /* SPECIFIC TO ORG*/
 #flipagram:hover, #flipagram.collapsed {
   background: rgba(234, 60, 60, .7);
@@ -244,7 +251,7 @@ ul.experience-list {
 }
 
 #bnyMellon:hover, #bnyMellon.collapsed {
-  background: rgba(288, 106, 41, .75);
+  background: rgba(238, 165, 75, .9);
 }
 
 #pittsburghParks:hover, #pittsburghParks.collapsed {
@@ -253,4 +260,56 @@ ul.experience-list {
 
 #zeroWastePittsburgh:hover, #zeroWastePittsburgh.collapsed {
   background: rgba(35, 168, 85, .8);
+}
+
+#theLatest:hover, #theLatest.collapsed {
+  background: rgba(234, 60, 60, .7);
+}
+
+#fig:hover, #fig.collapsed {
+  background: rgba(66, 135, 215, .8);
+}
+
+#notetaker:hover, #notetaker.collapsed {
+  background: rgba(50, 155, 148, .8);
+}
+
+/* BREAKPOINT */
+@media only screen and (max-width : 840px) {
+  .banner h3:before, .banner h3:after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 550px) {
+  .header .main {
+    font-size: 55px;
+  }
+
+  .header .desc {
+    font-size: 20px;
+  }
+
+  .banner h3 {
+    font-size: 18px;
+  }
+
+  .experience .time {
+    font-size: 14px;
+  }
+
+  .experience .organization {
+    font-size: 44px;
+  }
+
+  .experience .key-skills {
+    font-size: 20px;
+    width: 80%;
+    padding-bottom: 10px;
+  }
+
+  .experience .body {
+    width: 80%;
+    font-size: 18px;
+  }
 }

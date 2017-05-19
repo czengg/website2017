@@ -5,7 +5,7 @@ var data = {
       id: 'flipagram',
       skills: 'react / react native / node',
       dates: '2016 - 2017',
-      description: 'Worked in team of three to oversee key web contributions including transition to hybrid react native application, back ip project that contributed to growth in top-line metrics, and website refresh. Gained experience in frame- works such as <strong>React</strong>, <strong>React Native</strong>, <strong>node.js</strong>, etc. Primarily worked in <strong>Javascript</strong>.'
+      description: 'Worked as <strong>software engineer</strong> in team of three to oversee key web contributions including transition to hybrid react native application, backflip project that contributed to growth in top-line metrics, and website refresh. </br> Gained experience in frameworks such as <strong>React</strong>, <strong>React Native</strong>, <strong>node.js</strong>, etc. </br> Primarily worked in <strong>Javascript</strong>.'
     },
     {
       organization: 'Zazzle',
@@ -55,58 +55,27 @@ var data = {
       skills: 'ruby on rails / consulting',
       dates: '2014',
       description: "Worked with a team to help Zero Waste Pittsburgh <strong>integrate technology into their current workflow</strong>. </br> Understand the needs of the nonprofit and create an application to lessen the burden of the initial waste audit process. </br> Final deliverable <strong>reduced turnaround time and wasted energy</strong>. </br> Primarily worked in <strong>Ruby on Rails</strong>."
+    },
+    {
+      organization: 'thelatest',
+      id: 'theLatest',
+      skills: 'adobe creative suite',
+      dates: '2012',
+      description: 'Headed by <strong>Jeffrey Hall</strong>, former VP of Marketing Services at LA Times. </br> Closely worked with mentors to <strong>design, develop, and contribute to marketing decisions</strong> during development stages. </br> Contributed to creation of logo, layout, and fundraising efforts.'
+    },
+    {
+      organization: 'fig.',
+      id: 'fig',
+      skills: 'python / pil',
+      dates: '2013',
+      description: 'Fig. is an <strong>image manipulation</strong> program written in Python. </br>Based on Prokudin-Gorskii Negatives: red, green, blue plates alignment. </br> Contained Eight Filters: Blur, Contrast, Greyscale, Pencil, Sepia, Sharpen, Technicolor, Tile. </br> Allowed you to edit parts of your image.'
+    },
+    {
+      organization: 'Notetaker',
+      id: 'notetaker',
+      skills: 'Javascript',
+      dates: '2013',
+      description: 'NoteTaker is a web application (written in Javascript), specializing in making note-taking easier. Users are able to save their notes (written in a custom markup language) onto their Google Drive folders as PDFs for later use. </br> Behind the Scenes: <strong>Node.js, Jquery Mobile, MongoDB, Google Authentication (OAuth), Custom Markup Language to HTML, HTML to PDF, Google Drive PDF Saving</strong>.'
     }
-      
-    // {
-    //   sectionTitle: 'selected code projects',
-    //   sectionHeader: 'coding projects',
-    //   id: 'codingProjects',
-    //   projects: [
-        
-    //     {
-    //       type: 'project',
-    //       title: 'fig.',
-    //       id: 'fig',
-    //       skillType: 'languages',
-    //       skills: 'Python',
-    //       dates: '2013',
-    //       desc: 'Fig. is an <strong>image manipulation</strong> program written in Python. </br>Based on Prokudin-Gorskii Negatives: red, green, blue plates alignment. </br> Contained Eight Filters: Blur, Contrast, Greyscale, Pencil, Sepia, Sharpen, Technicolor, Tile. </br> Allowed you to edit parts of your image.'
-    //     },
-    //     {
-    //       type: 'project',
-    //       title: 'Notetaker',
-    //       id: 'notetaker',
-    //       skillType: 'languages',
-    //       skills: 'Javascript',
-    //       dates: '2013',
-    //       desc: 'NoteTaker is a web application (written in Javascript), specializing in making note-taking easier. Users are able to save their notes (written in a custom markup language) onto their Google Drive folders as PDFs for later use. </br> Behind the Scenes: <strong>Node.js, Jquery Mobile, MongoDB, Google Authentication (OAuth), Custom Markup Language to HTML, HTML to PDF, Google Drive PDF Saving</strong>.'
-    //     }
-    //   ]
-    // },
-    // {
-    //   sectionTitle: 'selected design projects',
-    //   sectionHeader: 'design projects',
-    //   id: 'designProjects',
-    //   projects: [
-    //     {
-    //       type: 'company',
-    //       title: 'BNY Mellon',
-    //       id: 'bnyMellon',
-    //       skillType: 'programs',
-    //       skills: 'Axure',
-    //       dates: '2013',
-    //       desc: 'Worked as a <strong>technical intern under the User Experience Department</strong> of BNY Mellon. </br> Used software such as Axure, ExtJS, Microsoft Sharepoint, etc. </br> Helped with <strong>wireframing, mapping, and designing</strong> internal as well as outward facing sites. </br> Contributed in active discussions on current projects.'
-    //     },
-    //     {
-    //       type: 'company',
-    //       title: 'thelatest',
-    //       id: 'theLatest',
-    //       skillType: 'programs',
-    //       skills: 'Adobe Creative Suite',
-    //       dates: '2012',
-    //       desc: 'Headed by <strong>Jeffrey Hall</strong>, former VP of Marketing Services at LA Times. </br> Closely worked with mentors to <strong>design, develop, and contribute to marketing decisions</strong> during development stages. </br> Contributed to creation of logo, layout, and fundraising efforts.'
-    //     }
-    //   ]
-    // }
   ],
 };
