@@ -21,7 +21,6 @@
     updateHeaderHeight();
   });
 
-
   function updateHeaderHeight() {
     $('.header').height($(window).height());
   }
