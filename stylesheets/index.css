@@ -207,23 +207,23 @@ ul.experience-list {
 
 /* active state */
 
-.experience:hover .organization, .experience:hover .key-skills, .experience.collapsed .organization, .experience.collapsed .key-skills {
+.experience.collapsed .organization, .experience.collapsed .key-skills {
   color: #FFF;
 }
 
-.experience:hover .time, .experience.collapsed .time {
+.experience.collapsed .time {
   color: #E2E2E2;
 }
 
-.experience:hover .indicator, .experience.collapsed .indicator {
+.experience.collapsed .indicator {
   fill: #FFF;
 }
 
-.experience:hover .expand-active, .experience.collapsed .close {
+.experience.collapsed .close {
   display: inline-block;
 }
 
-.experience:hover .expand, .experience.collapsed .expand, .experience.collapsed .expand-active {
+.experience.collapsed .expand, .experience.collapsed .expand-active {
   display: none;
 }
 
@@ -236,51 +236,117 @@ ul.experience-list {
 }
 
 /* SPECIFIC TO ORG*/
-#flipagram:hover, #flipagram.collapsed {
+#flipagram.collapsed {
   background: rgba(234, 60, 60, .7);
 }
 
-#zazzle:hover, #zazzle.collapsed {
+#zazzle.collapsed {
   background: rgba(66, 135, 215, .8);
 }
 
-#roaringFork:hover, #roaringFork.collapsed {
+#roaringFork.collapsed {
   background: rgba(50, 155, 148, .8);
 }
 
-#canvs:hover, #canvs.collapsed {
+#canvs.collapsed {
   background: rgba(51, 185, 216, .9);
 }
 
-#drawbridge:hover, #drawbridge.collapsed {
+#drawbridge.collapsed {
   background: rgba(152, 152, 152, .9);
 }
 
-#bnyMellon:hover, #bnyMellon.collapsed {
+#bnyMellon.collapsed {
   background: rgba(238, 165, 75, .9);
 }
 
-#pittsburghParks:hover, #pittsburghParks.collapsed {
+#pittsburghParks.collapsed {
   background: rgba(55, 155, 50, .8);
 }
 
-#zeroWastePittsburgh:hover, #zeroWastePittsburgh.collapsed {
+#zeroWastePittsburgh.collapsed {
   background: rgba(35, 168, 85, .8);
 }
 
-#theLatest:hover, #theLatest.collapsed {
+#theLatest.collapsed {
   background: rgba(234, 60, 60, .7);
 }
 
-#fig:hover, #fig.collapsed {
+#fig.collapsed {
   background: rgba(66, 135, 215, .8);
 }
 
-#notetaker:hover, #notetaker.collapsed {
+#notetaker.collapsed {
   background: rgba(50, 155, 148, .8);
 }
 
 /* BREAKPOINT */
+@media only screen and (min-width: 550px) {
+  #flipagram:hover {
+    background: rgba(234, 60, 60, .7);
+  }
+
+  #zazzle:hover {
+    background: rgba(66, 135, 215, .8);
+  }
+
+  #roaringFork:hover {
+    background: rgba(50, 155, 148, .8);
+  }
+
+  #canvs:hover {
+    background: rgba(51, 185, 216, .9);
+  }
+
+  #drawbridge:hover {
+    background: rgba(152, 152, 152, .9);
+  }
+
+  #bnyMellon:hover {
+    background: rgba(238, 165, 75, .9);
+  }
+
+  #pittsburghParks:hover {
+    background: rgba(55, 155, 50, .8);
+  }
+
+  #zeroWastePittsburgh:hover {
+    background: rgba(35, 168, 85, .8);
+  }
+
+  #theLatest:hover {
+    background: rgba(234, 60, 60, .7);
+  }
+
+  #fig:hover {
+    background: rgba(66, 135, 215, .8);
+  }
+
+  #notetaker:hover {
+    background: rgba(50, 155, 148, .8);
+  }
+
+  .experience:hover .organization, .experience:hover .key-skills {
+    color: #FFF;
+  }
+
+  .experience:hover .time {
+    color: #E2E2E2;
+  }
+
+  .experience:hover .indicator {
+    fill: #FFF;
+  }
+
+  .experience:hover .expand-active {
+    display: inline-block;
+  }
+
+  .experience:hover .expand {
+    display: none;
+  }
+}
+
 @media only screen and (max-width : 840px) {
   .banner h3:before, .banner h3:after {
     display: none;
