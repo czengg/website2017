@@ -12,7 +12,7 @@
   $(document).ready(function() {
     updateHeaderHeight();
 
-    $('.experience').on('click', function(e) {
+    $('.experience').on('click tap', function(e) {
       $(this).toggleClass('collapsed');
     });
   });
