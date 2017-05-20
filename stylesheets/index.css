@@ -148,7 +148,7 @@ ul.experience-list {
   border-bottom: #E2E2E2 1px solid;
   margin: 0;
   text-align: center;
-  transition: background .5s ease-in-out;
+  transition: all .5s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -344,6 +344,10 @@ ul.experience-list {
 
   .experience:hover .expand {
     display: none;
+  }
+
+  .experience {
+    transition: background .5s ease-in-out;
   }
 }
 
