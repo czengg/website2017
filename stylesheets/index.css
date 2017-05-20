@@ -342,7 +342,7 @@ ul.experience-list {
     display: inline-block;
   }
 
-  .experience:hover .expand {
+  .experience:hover .expand, .experience.collapsed:hover .expand-active {
     display: none;
   }
 
