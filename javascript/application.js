@@ -16,7 +16,7 @@
       $(this).toggleClass('collapsed');
     });
 
-    $('.experience').on('touchstart', function() {
+    $('.experience').on('touchend', function() {
       $(this).toggleClass('collapsed');
     })
   });
