@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <title>Cindy Zeng</title>
+  
+<!--  STYLINGS  -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="type/css">
+  <link rel="stylesheet" href="stylesheets/index.css" type="text/css">
+  
+<!-- JAVASCRIPTS   -->
+  <script src="javascript/jquery.min.js" type="text/javascript"></script>
+  <script src="javascript/handlebars-v4.0.2.js" type="text/javascript"></script>
+  <script src="javascript/data.js" type="text/javascript"></script>
+    
+</head>
+
+<body>
+  <div class="header">
+    <div class="background">
+      <div class="banner">
+        <h3>interactive resume</h3>
+      </div>
+      <h1 class="main">Cindy Zeng</h1>
+      <h2 class="desc">web developer and designer</h2>
+      <a href="mailto:czeng67@gmail.com" class="action">
+        <div class="contact btn">contact</div>
+      </a>
+      <div class="scroll action">
+        <p>Scroll Down For More</p>
+        <img class="indicator" src="images/down-arrow.svg" alt="Scroll Down For More"/>
+      </div>
+    </div>
+  </div>
+  <ul class="experience-list">
+    <template id="experience">
+      {{#each this}}
+      <li class="experience action" id="{{id}}">
+        <h3 class="time">{{dates}}</h3>
+        <h1 class="organization">{{organization}}</h1>
+        <h2 class="key-skills">{{skills}}</h2>
+        <div class="indicator">
+          <img class="expand" src="images/expand.svg" alt="Expand"/>
+          <img class="expand-active" src="images/expand-white.svg" alt="Expand Active"/>
+          <img class="close" src="images/close-white.svg" alt="Close" />
+        </div>
+        <div class="body">
+          <p class="text">
+            {{{description}}}
+          </p>
+        </div>
+      </li>
+      {{/each}}
+    </template>
+  </ul>
+
+  <script src="javascript/application.js" type="text/javascript"></script>
+</body>
