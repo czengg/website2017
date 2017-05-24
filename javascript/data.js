@@ -73,7 +73,7 @@ var data = {
     {
       organization: 'Notetaker',
       id: 'notetaker',
-      skills: 'Javascript',
+      skills: 'javascript',
       dates: '2013',
       description: 'NoteTaker is a web application (written in Javascript), specializing in making note-taking easier. Users are able to save their notes (written in a custom markup language) onto their Google Drive folders as PDFs for later use. </br> Behind the Scenes: <strong>Node.js, Jquery Mobile, MongoDB, Google Authentication (OAuth), Custom Markup Language to HTML, HTML to PDF, Google Drive PDF Saving</strong>.'
     }
