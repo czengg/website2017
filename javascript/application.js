@@ -7,7 +7,11 @@
   var experienceTemplate = Handlebars.compile($('#experience').html());
 
   //render
-  $('.experience-list').html(experienceTemplate(data.experience));
+  var experience = data.experience.map(e => ({
+    ...e,
+    description: e.description.join(' </br> '),
+  }))
+  $('.experience-list').html(experienceTemplate(experience));
 
   $(document).ready(function() {
     updateHeaderHeight();

@@ -148,7 +148,7 @@ ul.experience-list {
   border-bottom: #E2E2E2 1px solid;
   margin: 0;
   text-align: center;
-  transition: all .5s ease-in-out;
+  transition: max-height .5s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,11 +168,10 @@ ul.experience-list {
 }
 
 .experience .key-skills {
-  margin: 6px 0 0 0;
+  margin: 6px 0 3px 0;
   font-size: 24px;
   color: #7F7F7F;
   width: 50%;
-  transition: all .5s ease-in-out;
   padding-bottom: 30px;
 }
 
@@ -192,12 +191,12 @@ ul.experience-list {
 
 .experience .body {
   text-align: left;
-  color: #E2E2E2;
+  color: #FFF;
   width: 80%;
   font-size: 23px;
   max-height: 0;
   overflow: hidden;
-  transition: all .5s ease-in-out;
+  transition: max-height .5s ease-in-out;
 }
 
 .experience .body strong {
@@ -233,9 +232,18 @@ ul.experience-list {
 
 .experience.collapsed .key-skills {
   border-bottom: 3px solid #FFF;
+  margin-bottom: 0;
 }
 
 /* SPECIFIC TO ORG*/
+#polymail.collapsed {
+  background: rgba(100,182,237, .9);
+}
+
+#dd.collapsed {
+  background: rgba(62,82,120, .7);
+}
+
 #flipagram.collapsed {
   background: rgba(234, 60, 60, .7);
 }
@@ -282,6 +290,14 @@ ul.experience-list {
 
 /* BREAKPOINT */
 @media only screen and (min-width: 550px) {
+  #polymail:hover {
+    background: rgba(100,182,237, .9);
+  }
+
+  #dd:hover {
+    background: rgba(62,82,120, .7);
+  }
+
   #flipagram:hover {
     background: rgba(234, 60, 60, .7);
   }
